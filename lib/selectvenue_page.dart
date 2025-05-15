@@ -43,7 +43,7 @@ class _SelectVenuePageState extends State<SelectVenuePage> {
   }
 
   void getSuggestion(String input) async {
-    const String PLACES_API_KEY = "AIzaSyC-ihWtRLpJ1uIOK5hsH79u_TV-AOevPo0";
+    const String PLACES_API_KEY = "YOUR_API_KEY";
 
     try {
       String baseURL =
@@ -216,7 +216,7 @@ class _SelectVenuePageState extends State<SelectVenuePage> {
   }
 
   void getPlaceDetails(String placeId, String description) async {
-    const String PLACES_API_KEY = "AIzaSyC-ihWtRLpJ1uIOK5hsH79u_TV-AOevPo0";
+    const String PLACES_API_KEY = "YOUR_API_KEY";
     String baseURL = 'https://maps.googleapis.com/maps/api/place/details/json';
     String request = '$baseURL?place_id=$placeId&key=$PLACES_API_KEY';
 
